@@ -1,4 +1,5 @@
-# ![movietube_icon](https://github.com/AbdAlghaniAlbiek/MovieTube/blob/master/MovieTube/Assets/AppIcons/StoreLogo.scale-100.png) movietube_backend
+# ![movietube_icon](https://github.com/AbdAlghaniAlbiek/MovieTube/blob/master/MovieTube/Assets/AppIcons/StoreLogo.scale-100.png) movietube_backend ![Twitter Follow](https://img.shields.io/twitter/follow/AbdAlbiek?style=social) ![GitHub](https://img.shields.io/github/license/AbdAlghaniAlbiek/SQLiteDBProject) ![node-current](https://img.shields.io/node/v/dotenv)
+
 * This project is the backend that serve MovieTube UWP client application that contains on Restfull APIs and the required resources(movies, trailers and actors' images).
 * you can see the UWP client app from [here.](https://github.com/AbdAlghaniAlbiek/MovieTube)
 
