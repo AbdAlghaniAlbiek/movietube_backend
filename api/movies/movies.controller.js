@@ -7,7 +7,7 @@ const {
     getMovieDescriptionOp,
     getMovieImagesOp
 } = require('./movies.service');
-const { aesEncryption } = require('../../security/aes_algorithm');
+const { aesEncryption, aesDecryption } = require('../../security/aes_algorithm');
 
 module.exports = {
 
@@ -109,6 +109,8 @@ module.exports = {
         //         errorMessage:aesEncryption(authError)});
         // }
 
+        console.log(req.query.movieId);
+
         getMovieCommentsOp(req.query.movieId, (error, comments) =>{
             if(error){
                 console.log(error)
@@ -123,7 +125,7 @@ module.exports = {
                     id:comments[i].id,
                     name: aesEncryption(comments[i].name),
                     image_path: aesEncryption(comments[i].image_path),
-                    comment: aesEncryption(comments[i].comment),
+                    comment: comments[i].comment == null ? "" : aesEncryption(comments[i].comment)
                 }); 
             }
 
